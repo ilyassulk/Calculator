@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button{
+    @apply text-2xl rounded-full bg-slate-300 h-20 w-20 font-semibold border-0 transition-all duration-100 hover:border-4 active:border-8
+}
+
+
+#display {
+    overflow-x: auto; /* Разрешить горизонтальный скролл */
+    overflow-y: hidden; /* Скрыть вертикальный скролл */
+    white-space: nowrap; /* Предотвращает перенос текста */
+    scrollbar-width: none; /* Скрыть стандартные скроллбары для браузеров Firefox */
+    -ms-overflow-style: none; /* Скрыть стандартные скроллбары для браузеров IE/Edge */
+}
+
+#display::-webkit-scrollbar {
+    display: none; /* Скрыть стандартные скроллбары для браузеров Chrome/Safari */
+}
+
+#app{
+    min-height: auto;
+    max-height: 700px;
+    height: -webkit-fill-available
+}
